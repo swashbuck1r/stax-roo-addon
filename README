@@ -1,1 +1,32 @@
-Stax Add-On for Roo
+<h1>Stax Add-On for Roo</h1>
+
+<h2>Installation</h2>
+<pre>
+roo
+roo> osgi obr url add --url http://mvn.stax.net/content/repositories/snapshots
+roo> osgi obr start --bundleSymbolicName net.stax.roo
+</pre>
+
+
+<h2>Add-On Commands</h2>
+<ul>
+  <li>stax setup</li>
+  <li>stax run</li>
+</ul>
+
+<h2>Local build/install</h2>
+Build the OSGi package
+<pre>
+# git clone git@github.com:swashbuck1r/stax-roo-addon.git
+# mvn package
+</pre>
+
+Install the package in Roo
+<pre>
+# roo
+roo> osgi uninstall --bundleSymbolicName net.stax.roo
+roo> felix shell start file:///Users/spike/stax/net.stax.roo/target/stax-roo-addon-0.1.0-SNAPSHOT.jar
+</pre>
+
+
+
