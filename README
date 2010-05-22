@@ -1,11 +1,12 @@
-This Roo add-on adds commands useful for running and deploying applications on the Stax Java Cloud (http://www.stax.net)
+Adds commands to Roo that are useful for running and deploying applications on the
+Stax Java Cloud (http://www.stax.net)
 
 ==Installation==
- roo
- roo> osgi obr url add --url http://mvn.stax.net/content/repositories/snapshots
- roo> osgi obr start --bundleSymbolicName net.stax.roo
+roo
+roo> osgi obr url add --url http://mvn.stax.net/content/repositories/snapshots
+roo> osgi obr start --bundleSymbolicName net.stax.roo
 
-Add-On Commands
+==Add-on commands==
  stax setup
  stax run
 
