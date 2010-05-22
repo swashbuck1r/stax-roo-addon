@@ -1,32 +1,22 @@
-<h1>Stax Add-On for Roo</h1>
+This Roo add-on adds commands useful for running and deploying applications on the Stax Java Cloud (http://www.stax.net)
 
-<h2>Installation</h2>
-<pre>
-roo
-roo> osgi obr url add --url http://mvn.stax.net/content/repositories/snapshots
-roo> osgi obr start --bundleSymbolicName net.stax.roo
-</pre>
+==Installation==
+ roo
+ roo> osgi obr url add --url http://mvn.stax.net/content/repositories/snapshots
+ roo> osgi obr start --bundleSymbolicName net.stax.roo
 
+Add-On Commands
+ stax setup
+ stax run
 
-<h2>Add-On Commands</h2>
-<ul>
-  <li>stax setup</li>
-  <li>stax run</li>
-</ul>
-
-<h2>Local build/install</h2>
+==Local build/install==
 Build the OSGi package
-<pre>
 # git clone git@github.com:swashbuck1r/stax-roo-addon.git
 # mvn package
-</pre>
 
 Install the package in Roo
-<pre>
 # roo
 roo> osgi uninstall --bundleSymbolicName net.stax.roo
 roo> felix shell start file:///Users/spike/stax/net.stax.roo/target/stax-roo-addon-0.1.0-SNAPSHOT.jar
-</pre>
-
 
 
