@@ -1,0 +1,1 @@
+@set ROO_ADDON_CLASSPATH_FILE="/Users/spike/stax/net.stax.roo/target\roo_classpath.txt"
